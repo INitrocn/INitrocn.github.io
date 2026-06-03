@@ -19,25 +19,25 @@
   <meta name="author" content="INitrocn">
   <meta name="keywords" content="">
   
-    <meta name="description" content="写在前面这一篇是去年欠的，有一些车友也想看 现在来填这些坑。 正文2023年，小孩马上一年级， 我们商量，上了学就不好老往外跑了 索性请假带他出去玩一圈。 说走就走，我这边请好了年假， 打算晚回来两三天，这样可以凑到20天左右 老婆这边倒班情况特殊，也是属于凑出来的假 由于买了哪吒U，前两年每年送2000度电， 而且我们是打算6月份出门，出来玩的人也不多， 所以准备开上车走，到南京大概1800公里">
+    <meta name="description" content="搭建串流音乐服务器引言就是玩 这个问题是因为另外一件事引起的 闲得没事收拾办公室 之前在现场没用上的一套无线HDMI传输器 突发奇想接在自己电脑上， 实现了主机与显示器的无线连接， 然后新的问题出现了，我的音箱是使用USB XMOS连接的 就是电脑做数字转盘，音箱的XMOS芯片来解码，效果更好。 但现在主机箱被我放在很远的地方，拉线过来不太现实 怎么办呢，这就扯到无线串流了。 正文其实之前在装NA">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开纯电去南京记2023">
-<meta property="og:url" content="https://initro.cn/2024/08/14/%E5%8D%8A%E5%B9%B4%E8%BF%91%E5%86%B5%E4%BA%8C/index.html">
+<meta property="og:title" content="搭建串流音乐服务器">
+<meta property="og:url" content="https://initro.cn/2026/05/26/%E6%90%AD%E5%BB%BA%E4%B8%B2%E6%B5%81%E9%9F%B3%E4%B9%90%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="INitrocn">
-<meta property="og:description" content="写在前面这一篇是去年欠的，有一些车友也想看 现在来填这些坑。 正文2023年，小孩马上一年级， 我们商量，上了学就不好老往外跑了 索性请假带他出去玩一圈。 说走就走，我这边请好了年假， 打算晚回来两三天，这样可以凑到20天左右 老婆这边倒班情况特殊，也是属于凑出来的假 由于买了哪吒U，前两年每年送2000度电， 而且我们是打算6月份出门，出来玩的人也不多， 所以准备开上车走，到南京大概1800公里">
+<meta property="og:description" content="搭建串流音乐服务器引言就是玩 这个问题是因为另外一件事引起的 闲得没事收拾办公室 之前在现场没用上的一套无线HDMI传输器 突发奇想接在自己电脑上， 实现了主机与显示器的无线连接， 然后新的问题出现了，我的音箱是使用USB XMOS连接的 就是电脑做数字转盘，音箱的XMOS芯片来解码，效果更好。 但现在主机箱被我放在很远的地方，拉线过来不太现实 怎么办呢，这就扯到无线串流了。 正文其实之前在装NA">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s1.328888.xyz/2022/07/20/lqfcp.jpg">
-<meta property="article:published_time" content="2024-08-13T18:29:23.000Z">
-<meta property="article:modified_time" content="2026-05-19T05:34:29.660Z">
+<meta property="article:published_time" content="2026-05-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-26T08:06:40.478Z">
 <meta property="article:author" content="INitrocn">
+<meta property="article:tag" content="飞牛NAS">
+<meta property="article:tag" content="ROON">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s1.328888.xyz/2022/07/20/lqfcp.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>开纯电去南京记2023 - INitrocn</title>
+  <title>搭建串流音乐服务器 - INitrocn</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -332,7 +332,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="开纯电去南京记2023"></span>
+            <span id="subtitle" data-typed-text="搭建串流音乐服务器"></span>
           
         </div>
 
@@ -343,8 +343,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-08-14 02:29" pubdate>
-          2024年8月14日 凌晨
+        <time datetime="2026-05-26 00:00" pubdate>
+          2026年5月26日 凌晨
         </time>
       </span>
     
@@ -355,7 +355,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          1.2k 字
         
       </span>
     
@@ -366,7 +366,7 @@
         
         
         
-          15 分钟
+          10 分钟
         
       </span>
     
@@ -405,147 +405,72 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">开纯电去南京记2023</h1>
+            <h1 id="seo-header">搭建串流音乐服务器</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a><a href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"></a>写在前面</h2><p>这一篇是去年欠的，有一些车友也想看</p>
-<p>现在来填这些坑。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a><a href="#%E6%AD%A3%E6%96%87"></a>正文</h2><p>2023年，小孩马上一年级，</p>
-<p>我们商量，上了学就不好老往外跑了</p>
-<p>索性请假带他出去玩一圈。</p>
-<p>说走就走，我这边请好了年假，</p>
-<p>打算晚回来两三天，这样可以凑到20天左右</p>
-<p>老婆这边倒班情况特殊，也是属于凑出来的假</p>
-<p>由于买了哪吒U，前两年每年送2000度电，</p>
-<p>而且我们是打算6月份出门，出来玩的人也不多，</p>
-<p>所以准备开上车走，到南京大概1800公里，</p>
-<p>提前做好了攻略，沿途的免费充电点都圈了出来。</p>
-<h3 id="第一站-天水-（pm4-00）"><a href="#第一站-天水-（pm4-00）" class="headerlink" title="第一站 天水 （pm4:00）"></a><a href="#%E7%AC%AC%E4%B8%80%E7%AB%99-%E5%A4%A9%E6%B0%B4-%EF%BC%88pm4-00%EF%BC%89"></a>第一站 天水 （pm4:00）</h3><p>我大概中午从兰州出发的，在大沙坪中恒特来电充满，</p>
-<p>这个位置特别好，就在高速口（可惜24年特来电不和哪吒合作了）</p>
-<p>这个老板原来做彩钢的，现在改做充电桩了</p>
-<p>原来只有20个桩，估计是赚钱了，</p>
-<p>后院搞了个更大的，现在40个桩以上。</p>
-<p>从兰州出发，第一段开到了甘谷服务区，</p>
-<p>补了40块钱的电，这个桩子什么牌子的忘了，还可以，比国网的好</p>
-<p>然后前往天水看望我姑姑。</p>
-<p>姑姑80多了，姑父过世后几个子女轮流照顾她</p>
-<p>吃饭的时候，她还跟我埋怨说我爸不给她打电话，</p>
-<p>她还不知道我爸已经走了，犹豫再三还是没有说实话</p>
-<p>我说我爸到处玩呢，驴友团，给我也不打电话云云。</p>
-<p>老人也没多说，我感觉她还是怀疑，</p>
-<p>但没办法，我让乐乐抱了抱她，我们就继续赶路了。</p>
-<h3 id="第二站-咸阳-（pm8-40）"><a href="#第二站-咸阳-（pm8-40）" class="headerlink" title="第二站 咸阳 （pm8:40）"></a><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%99-%E5%92%B8%E9%98%B3-%EF%BC%88pm8-40%EF%BC%89"></a>第二站 咸阳 （pm8:40）</h3><p>不知道是新车的原因还是降海拔的功劳，</p>
-<p>这个电耗惊人的能达到1:1（顺便一说我24年再走的时候全程6-7折，搞不懂，不过也确实走的不是同一条路）</p>
-<p>第二站在咸阳秦都区爱欣苑充电，也是特来电（nnd，24年用不了）</p>
-<p>这个点也离高速口很近。</p>
-<p>充完电大概晚上9点，自己状态还可以</p>
-<p>商量了一下，准备往中原进发。</p>
-<h3 id="第三站-三门峡-（2day-am0-30）"><a href="#第三站-三门峡-（2day-am0-30）" class="headerlink" title="第三站 三门峡 （2day am0:30）"></a><a href="#%E7%AC%AC%E4%B8%89%E7%AB%99-%E4%B8%89%E9%97%A8%E5%B3%A1-%EF%BC%882day-am0-30%EF%BC%89"></a>第三站 三门峡 （2day am0:30）</h3><p>过程不表，只记得从三门峡下高速已经晚上快1点了</p>
-<p>人这个弦突然一松吧，精神都恍惚了</p>
-<p>这个点街上车很少，路灯也不怎么好</p>
-<p>我就开了个30多的时速在街上慢慢挪</p>
-<p>充电的点叫富达集团快速充电服务站，是在一个单位的门口，</p>
-<p>应该是国网的桩，离住的酒店也不远</p>
-<p>没什么车在充电，插上我们就睡觉去了</p>
-<p>小宝已经睡着了，我抱上去的</p>
-<p>这里的经验就是，不要疲劳驾驶</p>
-<p>最后注意力都没法集中了。</p>
-<h3 id="第四站-平顶山-（2day-am10-20）"><a href="#第四站-平顶山-（2day-am10-20）" class="headerlink" title="第四站 平顶山 （2day am10:20）"></a><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%99-%E5%B9%B3%E9%A1%B6%E5%B1%B1-%EF%BC%882day-am10-20%EF%BC%89"></a>第四站 平顶山 （2day am10:20）</h3><p>到三门峡这里，应该是跑了超过1000公里的，</p>
-<p>第二天的路程相对轻松，放心的睡到7:30，</p>
-<p>吃了个早饭，话说胡辣汤好喝啊哈哈</p>
-<p>一路开到了平顶山，早上老婆替我开了一会。</p>
-<p>在这里碰到了此行第一个麻烦，</p>
-<p>跟着哪吒加电来到了一个权益电桩，</p>
-<p>在一个财政局的院子里，被告知下午6点以后才能进去充电。</p>
-<p>只能换位置，到了另一个权益电桩，兴城-兴业充电站，</p>
-<p>这个桩子在一个公园里，我们到的这天还有个什么健步走比赛</p>
-<p>公园里人很多，很热闹</p>
-<p>唯一不美就是这个桩子是星星充电的老桩子。</p>
-<p>不但充着速度越来越慢，而且是那种两个枪在一起的，两个同时充更慢，</p>
-<p>我来回倒了5次才充满，无语</p>
-<h3 id="第五站-太和县-（2day-pm2-20）"><a href="#第五站-太和县-（2day-pm2-20）" class="headerlink" title="第五站 太和县 （2day pm2:20）"></a><a href="#%E7%AC%AC%E4%BA%94%E7%AB%99-%E5%A4%AA%E5%92%8C%E5%8E%BF-%EF%BC%882day-pm2-20%EF%BC%89"></a>第五站 太和县 （2day pm2:20）</h3><p>接下来进入到安徽太和县，有一个权益电桩</p>
-<p>恒充特来电蓝堡城充电站（还得吐槽一下，现在特来电不合作了）</p>
-<p>这个点充电桩多，还有专门的司机休息室，条件还可以</p>
-<p>只不过天气太热了，充完电刚开起来的时候</p>
-<p>风扇声音很大，所有辅助驾驶报黄灯。</p>
-<p>大概半小时后才恢复正常。</p>
-<h3 id="第六站-南京-（2day-pm6-00）"><a href="#第六站-南京-（2day-pm6-00）" class="headerlink" title="第六站 南京 （2day pm6:00）"></a><a href="#%E7%AC%AC%E5%85%AD%E7%AB%99-%E5%8D%97%E4%BA%AC-%EF%BC%882day-pm6-00%EF%BC%89"></a>第六站 南京 （2day pm6:00）</h3><p>快到南京的时候感觉电差一点，</p>
-<p>但是家里已经做好饭在等着了，</p>
-<p>就在宁洛高速大溪河服务区充了20块钱的。</p>
-<p>大概晚7点多就到家吃上饭了。</p>
-<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a><a href="#%E6%84%9F%E6%83%B3"></a>感想</h2><p>去的这一路相对比较轻松，除了平顶山这里打破了规划，</p>
-<p>其他都是按规划走的，宁洛高速一直是在修路，限速80，</p>
-<p>实际我没看到几个按速跑的，都嗖嗖的。</p>
-<p>自适应巡航打开跑就是了。</p>
-<p>带了一个锐虎的杯子用来喝水，可以单手开盖</p>
-<p>基本每次充电我一杯都喝完了，推荐，挺好用的。</p>
-<p>玩的单独再写吧</p>
-<p><img src="https://s1.328888.xyz/2022/07/20/lqfcp.jpg" srcset="/img/loading.gif" lazyload alt="邓丽君蜡像.jpg"></p>
-<pre><code class="hljs">        ---
-
-        
-          
-
-
-
-          
-
-
-
-
-  开纯电去南京记2023
-  https://initrocn.github.io/2024/08/14/半年近况二/
-
-
-  
-    
-      作者
-      INitrocn
-    
-  
-  
-    
-      发布于
-      2024年8月14日
-    
-  
-  
-  
-    许可协议
-    
-      
-        
-        
-          [
-          
-            
-          
-          ](https://creativecommons.org/licenses/by/4.0/)
-        
-      
-    
-  
-
-
-
-
-          
-            
-              
-                
-                
-              
-              
-                
-                
-                  [
-                    半年近况
-                    下一篇
-                    
-                  ](/2023/07/06/%E5%8D%8A%E5%B9%B4%E8%BF%91%E5%86%B5/)
-</code></pre>
+                <h1 id="搭建串流音乐服务器"><a href="#搭建串流音乐服务器" class="headerlink" title="搭建串流音乐服务器"></a>搭建串流音乐服务器</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>就是玩</p>
+<p>这个问题是因为另外一件事引起的</p>
+<p>闲得没事收拾办公室</p>
+<p>之前在现场没用上的一套无线HDMI传输器</p>
+<p>突发奇想接在自己电脑上，</p>
+<p>实现了主机与显示器的无线连接，</p>
+<p>然后新的问题出现了，我的音箱是使用USB XMOS连接的</p>
+<p>就是电脑做数字转盘，音箱的XMOS芯片来解码，效果更好。</p>
+<p>但现在主机箱被我放在很远的地方，拉线过来不太现实</p>
+<p>怎么办呢，这就扯到无线串流了。</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>其实之前在装NAS的时候，对这个事略有了解，</p>
+<p>网上流传着它的传说，它就是“ROON”，</p>
+<p>基本是这个领域最权威的方案了，</p>
+<p>它由两个部分组成，一个是ROON CORE,</p>
+<p>安装在存音乐的地方，电脑也行，NAS也行，</p>
+<p>一个是客户端，用于控制音乐播放。</p>
+<p>这个ROON软件是个国外的软件，采用的是订阅付费的方式</p>
+<p>也可以买断，大概要几千块。</p>
+<p>现在也有很多所谓开心版，小黄鱼上也有的卖，</p>
+<p>要是不想花钱还是要下一番功夫的。</p>
+<p>花钱是不可能花钱的，所以就下了一番功夫，</p>
+<p>所幸是最后也跑通了。</p>
+<p>第一个坑，用什么设备来实现。</p>
+<p>无意中刷到了飞傲的一款产品，</p>
+<p>我买东西很多时候是靠缘分，</p>
+<p>这个东西一眼就相中的，但我也没有立即买，</p>
+<p>做了一段时间的功课，期间也考虑了一些别的方案，</p>
+<p>比如说有一种靠wifi串流的USB扩展，</p>
+<p>理论上它和直接插在电脑上是一样的，</p>
+<p>东西我都买了，叫WBOX，</p>
+<p>但当我装好后我发现，这东西确实能串流，</p>
+<p>但它的功率很低，所以像xmos音箱这种量级的数据根本不能支撑，</p>
+<p>甚至移动硬盘都无法使用，设备管理器里能识别型号，</p>
+<p>但也就到此为止了，只能插插U盘之类的，</p>
+<p>所以就又想起来飞傲的这个设备了</p>
+<p>仔细研究之下，只觉得这东西就像定制的一样，</p>
+<p>相比其他流媒体播放器动辄万元起步的价格，</p>
+<p>它这个价格最低400多简直是一股清流，</p>
+<p>至于它为什么这么便宜，是因为它不带解码器，</p>
+<p>一般要插耳机或者音箱还需要再配个解码器</p>
+<p>而飞傲自家也有类似外观的解码器，可以与SR11玩叠叠乐</p>
+<p>即相同的外观一层层摞起来。</p>
+<p>但这对我不是问题啊，我的音箱是自带xmos模式的，</p>
+<p>也就是说只要把数据串流过来，解码由音箱自身完成，</p>
+<p>既实现了无线的方便，又可以有有线的音质。</p>
+<p>然后就这么改造了一下，中间过程费了一些功夫，</p>
+<p>在飞牛NAS上以docker形式安装了ddg5366大神的开心版</p>
+<p>需要注意的是，开心版只能用老版本1.8，它有很多的版本，</p>
+<p>我装上发现它是build 1126版，</p>
+<p>苹果手机在应用商店搜roon，选那个灰色的1.8版。</p>
+<p>稍微配置一下就能用，一个是填一下音乐的路径，再就是勾选host标签就行了。</p>
+<p>然后手机就能控制了，但这需要手机和NAS处于同一路由器下。</p>
+<p>我的手机平时用的专线，所以我又上网搜了下电脑版，</p>
+<p>电脑版不太好找，最后居然在SMZDM上找到了线索。</p>
+<p>感谢大神的分享。</p>
+<p>链接附在后面。然后就可以开始用了，</p>
+<p>除了只能在本地用，功能上与原版无异。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/az6enzr5/">刮削你的音乐，搭建Roon音乐播放平台</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.rainlain.com/index.php/2021/07/26/1020/">私人推荐：ROON v2.0 x64 开心版（241024更新）</a></li>
+</ul>
 
                 
               </div>
@@ -554,6 +479,36 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%8E%A9%E6%B3%95/" class="category-chain-item">玩法</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%A3%9E%E7%89%9BNAS/" class="print-no-link">#飞牛NAS</a>
+      
+        <a href="/tags/ROON/" class="print-no-link">#ROON</a>
+      
+    </div>
   
 </div>
 
@@ -563,8 +518,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>开纯电去南京记2023</div>
-      <div>https://initro.cn/2024/08/14/半年近况二/</div>
+      <div>搭建串流音乐服务器</div>
+      <div>https://initro.cn/2026/05/26/搭建串流音乐服务器/</div>
     </div>
     <div class="license-meta">
       
@@ -576,7 +531,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年8月14日</div>
+          <div>2026年5月26日</div>
         </div>
       
       
@@ -608,9 +563,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/19/%E4%B8%A4%E5%B9%B4%E8%BF%91%E5%86%B5/" title="好久不见">
+                      <a href="/2026/06/03/%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93/" title="阶段总结">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">好久不见</span>
+                        <span class="hidden-mobile">阶段总结</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -618,8 +573,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/06/%E5%8D%8A%E5%B9%B4%E8%BF%91%E5%86%B5/" title="半年近况">
-                        <span class="hidden-mobile">半年近况</span>
+                      <a href="/2026/05/22/%E7%81%B5%E5%85%89%E4%B8%80%E9%97%AA/" title="灵光一闪">
+                        <span class="hidden-mobile">灵光一闪</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
